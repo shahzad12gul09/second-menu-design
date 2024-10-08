@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'AmsterdamOne';
+    src: url('../font/AmsterdamOne-eZ12l.ttf');
+}
+@font-face {
+    font-family: 'Montage';
+    src: url('../font/Montage-BWg0G.ttf') format('BWg0G');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montage';
+    font-weight: 700;
+    font-style: normal;
+}
+/* Preloader */
+.preloader{
+    height: 100vh !important;
+    background-color: #FFCA2A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Make sure it's on top */
+}
+.gif{
+    width: 250px;
+    height: 250px;
+}
+
+.top{
+    height: 100px; 
+    background-image: url(../img/top.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+}
+.bottom{
+    height: 100px; 
+    background-image: url(../img/bottom.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.food-item {
+    margin: 15px 0;
+    opacity: 0; 
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.content{
+    background-color: rgba(255, 255, 255, 0.384);
+}
+
+.heading{
+    font-family: 'AmsterdamOne';
+    font-weight: 400;
+}
+
+.head{
+    left: 65px;
+}
+
+.sub-heading{
+    background-color: #462009;
+    color: white;
+}
+
+.second-img{
+    width: 250px; 
+    margin-top: 90%;
+}
+.third-img{
+    margin-top: 160%;
+}
+@media screen and (max-width: 390px) {
+    .second-img{
+        margin-top: 110%;
+    }
+
+    .third-img {
+        margin-top: 200%;
+    }
+}
